@@ -57,7 +57,7 @@ function startDriving(direction: string): void {
 
     if (direction == "square") {
         const driveTime: number = 2000
-        const turnTime: number = 720
+        const turnTime: number = 730
         const pauseTime: number = 2000
 
         basic.pause(5000)
@@ -82,7 +82,7 @@ function startDriving(direction: string): void {
 function driveForward(time: number): void {
     driving = true
     pins.servoWritePin(AnalogPin.P1, 130)
-    pins.servoWritePin(AnalogPin.P2, 50)
+    pins.servoWritePin(AnalogPin.P2, 60)
     basic.pause(time)
     stop()
 }
